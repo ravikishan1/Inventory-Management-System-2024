@@ -1,0 +1,9 @@
+create or replace trigger bicustomer
+before insert on customer for each row
+declare
+begin
+if(:new.id not like 'C%') then
+raise_application_error(-20000,'Customer ID must starts with C');
+end if;
+end;
+/

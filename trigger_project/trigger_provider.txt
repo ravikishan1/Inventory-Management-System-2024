@@ -1,0 +1,9 @@
+create or replace trigger biprovider
+before insert on provider for each row
+declare
+begin
+if(:new.id not like 'P%') then
+raise_application_error(-20000,'Provider ID must starts with P');
+end if;
+end;
+/

@@ -1,0 +1,9 @@
+create or replace trigger bilocation
+before insert on location for each row
+declare
+begin
+if(:new.id not like 'L%') then
+raise_application_error(-20000,'Location ID must starts with L');
+end if;
+end;
+/

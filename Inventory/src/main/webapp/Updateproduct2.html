@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<form name =f method=post action="product.jsp">
+<body style="background:url(image3.jpg); background-size: 100vw 100vh">
+<table border=1>
+<tr>
+<th colspan=2><marquee behavior="alternate">PRODUCT DETAILS</marquee></th>
+</tr>
+<tr>
+<td>ID</td>
+<th><input type=text name=t1></th>
+</tr>
+<tr>
+<td>BARCODE</td>
+<th><input type=text name=t2></th>
+</tr>
+<tr>
+<td>NAME</td>
+<th><input type=text name=t3></th>
+</tr>
+<tr>
+<td>DESC1</td>
+<th><input type=text name=t4></th>
+</tr>
+<tr>
+<td>CATEGORY</td>
+<th><input type=text name=t5></th>
+</tr>
+<tr>
+<td>QTY</td>
+<th><input type=text name=t6></th>
+</tr>
+<tr>
+<td>WEIGHT</td>
+<th><input type=text name=t7></th>
+</tr>
+<tr>
+<td>REFRIGERATED</td>
+<th><input type=text name=t8></th>
+</tr>
+<tr>
+<th colspan=2><input type=button value=New><input type=submit value=Update name=b1>
+<input type=submit value=Allsearch name=b1><input type=submit value=Psearch name=b1>
+<input type=button value=Home onClick=gohome()><input type=button value=Specialsearch onClick=gosearch()></th>
+</tr>
+</table>
+</body>
+</form>
+<script>
+function gohome()
+	{
+	window.open("MYMenu.html","_self")
+	}
+function gosearch()
+{
+window.open("Specialsearch.html","_self")
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+create or replace trigger biorderdetail
+before insert on orderdetail for each row
+declare
+begin
+if(:new.id not like 'O%') then
+raise_application_error(-20000,'Orderdetail ID must starts with O');
+end if;
+end;
+/

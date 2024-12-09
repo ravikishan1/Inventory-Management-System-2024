@@ -1,0 +1,9 @@
+create or replace trigger biinventory
+before insert on inventory for each row
+declare
+begin
+if(:new.id not like 'I%') then
+raise_application_error(-20000,'Inventory ID must starts with I');
+end if;
+end;
+/

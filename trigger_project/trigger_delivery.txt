@@ -1,0 +1,9 @@
+create or replace trigger bidelivery
+before insert on delivery for each row
+declare
+begin
+if(:new.id not like 'D%') then
+raise_application_error(-20000,'Delivery ID must starts with D');
+end if;
+end;
+/

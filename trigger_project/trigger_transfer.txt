@@ -1,0 +1,9 @@
+create or replace trigger bitransfer
+before insert on transfer for each row
+declare
+begin
+if(:new.id not like 'T%') then
+raise_application_error(-20000,'Transfer ID must starts with T');
+end if;
+end;
+/

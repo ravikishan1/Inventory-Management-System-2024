@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background-image: url(image4.jpeg);
+        background-color: rgb(95, 56, 15);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 30px;
+      }
+      .wrapper{
+        position: relative;
+        width: 800px;
+        background-color: white;
+        border-radius: 8px;
+        padding: 30px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.4);
+      }
+      .wrapper header{
+        text-align: center;
+        font-weight: 500;
+        font-size: 2rem;
+        color: #846161;
+        margin-bottom: 20px;
+        border: 2px solid black ;
+        border-radius:10px;
+      }
+      p{
+        font-weight: 400;
+        font-size: 1rem;
+        margin-left: 10px;
+        text-decoration: underline;
+      }
+      .input-box label{
+        color: #5e4545;
+        font-size: 0.95rem;
+        font-weight: 500;
+        
+      }
+      .input-box{
+        width: 100%;
+        margin-top: 20px;
+      }
+      .input-box input{
+        position: relative;
+        height: 50px;
+        width: 100%;
+        outline: none;
+        font-size: 1rem;
+        color: #8a2c2c;
+        border: 2px solid #0f0c0c;
+        border-radius: 6px;
+        padding: 0 15px;
+        margin-top: 5px;
+      }
+      .two{
+        display: flex;
+        column-gap: 15px;
+      }
+      .input-short{
+        width: 40%;
+      }
+      .btns{
+        display: flex;
+        column-gap: 150px;
+        justify-content: center;
+      }
+      .btn{
+        width: 150px;
+        height: 45px;
+        background: #7189bc;
+        border: none;
+        outline: none;
+        border-radius: 40px;
+        box-shadow: 0 0 10px rgba(0,0,0,.1);
+        cursor: pointer;
+        font-size: 20px;
+        color: #ddd;
+        font-weight: 700;
+        transition: 1s;
+        margin-top: 50px;
+      }
+      .btn:active{
+        transform: scale(0.97);
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form action="form.jsp">
+        <header>Get It Pvt. Ltd.</header>
+        <p>FILL THE FORM IN CAPITAL LETTER ONLY</p>
+        <div class="input-box">
+          <label for="inp">Name:</label>
+          <input type="text" id="inp" class="input" placeholder="Enter full name"  name="t1"/>
+        </div>
+        <div class="two">
+          <div class="input-box">
+            <label for="inp1">D.O.B :</label>
+            <input type="text" id="inp1" class="input" placeholder="Enter DOB" name="t2"/>
+          </div>
+          <div class="input-box">
+            <label for="inp2">Gender :</label>
+            <input type="text" id="inp2" class="input" placeholder="Enter Gender" name="t3"/>
+          </div>
+        </div>
+        <div class="input-box">
+          <label for="inp3">Father's Name :</label>
+          <input type="text" id="inp3" class="input" placeholder="Enter father's name" name="t4"/>
+        </div>
+        <div class="input-box">
+          <label for="inp4">Corresspondence Address :</label>
+          <input type="text" id="inp4" class="input" placeholder="Enter address" name="t5"/>
+        </div>
+        <div class="input-box">
+          <label for="inp5">Contact Id :</label>
+          <input type="text" id="inp5" class="input" placeholder="Enter contact" name="t6"/>
+        </div>
+        <div class="input-box">
+          <label for="inp6">Email Id :</label>
+          <input type="text" id="inp6" class="input" placeholder="Enter email" name="t7"/>
+        </div>
+        <div class="input-box">
+          <label for="inp10">Education Qualification :</label>
+          <input type="text" id="inp10" class="input" placeholder="Enter your qualifications" name="t8"/>
+        </div>
+        <div class="input-box">
+          <label for="inp7">School / College :</label>
+          <input type="text" id="inp7" class="input" placeholder="Enter your school/college name" name="t9"/>
+        </div>
+        <div class="input-box">
+          <label for="inp8">Course Interested In :</label>
+          <input type="text" id="inp8" class="input" placeholder="Enter course you are interested in" name="t10"/>
+        </div>
+        <div class="input-box input-short">
+          <label for="inp9">Date :</label>
+          <input type="text" id="inp9" class="input " placeholder="Enter date" name="t11" />
+        </div>
+        <div class="btns">
+          <input type="submit" value="Save" name="b1" class="btn" />
+          <input type="submit" value="Delete" name="b1" class="btn" />
+          <input type="submit" value="Search" name="b1" class="btn" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+</body>
+</html>

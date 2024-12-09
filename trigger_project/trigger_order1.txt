@@ -1,0 +1,9 @@
+create or replace trigger biorder1
+before insert on order1 for each row
+declare
+begin
+if(:new.id not like 'O%') then
+raise_application_error(-20000,'Order1 ID must starts with O');
+end if;
+end;
+/

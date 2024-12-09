@@ -1,0 +1,85 @@
+drop user inventory cascade;
+create user inventory identified by inventory;
+grant dba to inventory;
+conn inventory/inventory
+create table provider
+(
+id nvarchar2(10),
+nm nvarchar2(40),
+address nvarchar2(40)
+);
+create table order1
+(
+id nvarchar2(10),
+date1 nvarchar2(40)
+);
+create table orderdetail
+(
+id nvarchar2(10),
+qty nvarchar2(40),
+adate1 nvarchar2(40),
+rdate1 nvarchar2(40)
+);
+create table transfer
+(
+id nvarchar2(10),
+qty nvarchar2(40),
+sdate1 nvarchar2(40),
+rdate1 nvarchar2(40)
+);
+create table product
+(
+id nvarchar2(10),
+barcode nvarchar2(40),
+name nvarchar2(40),
+desc1 nvarchar2(40),
+category nvarchar2(40),
+qty nvarchar2(40),
+weight nvarchar2(40),
+refrigerated nvarchar2(40)
+);
+create table customer
+(
+id nvarchar2(10),
+nm nvarchar2(40),
+address nvarchar2(40)
+);
+create table delivery
+(
+id nvarchar2(10),
+status nvarchar2(40)
+);
+create table inventory
+(
+id nvarchar2(10),
+qtyavail nvarchar2(40),
+minstock nvarchar2(40),
+maxstock nvarchar2(40)
+);
+create table deliverydetail
+(
+id nvarchar2(10),
+qty nvarchar2(40),
+expdate nvarchar2(40),
+actdate nvarchar2(40)
+);
+create table warehouse
+(
+id nvarchar2(10),
+nm nvarchar2(40),
+isrefrigerated nvarchar2(40)
+);
+create table location
+(
+id nvarchar2(10),
+nm nvarchar2(40),
+address nvarchar2(40)
+);
+
+create table login
+(
+id nvarchar2(10),
+pwd nvarchar2(10)
+);
+insert into login values('inventory','inventory');
+commit;

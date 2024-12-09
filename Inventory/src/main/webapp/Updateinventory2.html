@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<form name =f method=post action="inventory.jsp">
+<body style="background:url(image3.jpg); background-size: 100vw 100vh">
+<table border=1>
+<tr>
+<th colspan=2><marquee behavior="alternate">INVENTORY DETAILS</marquee></th>
+</tr>
+<tr>
+<td>ID</td>
+<th><input type=text name=t1></th>
+</tr>
+<tr>
+<td>QTYAVAIL</td>
+<th><input type=text name=t2></th>
+</tr>
+<tr>
+<td>MINSTOCK</td>
+<th><input type=text name=t3></th>
+</tr>
+<tr>
+<td>MAXSTOCK</td>
+<th><input type=text name=t4></th>
+</tr>
+<tr>
+<th colspan=2><input type=button value=New><input type=submit value=Update name=b1>
+<input type=submit value=Allsearch name=b1><input type=submit value=Psearch name=b1>
+<input type=button value=Home onClick=gohome()><input type=button value=Specialsearch onClick=gosearch()></th>
+</tr>
+</table>
+</body>
+</form>
+<script>
+function gohome()
+	{
+	window.open("MYMenu.html","_self")
+	}
+function gosearch()
+{
+window.open("Specialsearch.html","_self")
+}
+</script>
+</body>
+</html>

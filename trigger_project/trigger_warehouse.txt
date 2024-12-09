@@ -1,0 +1,9 @@
+create or replace trigger biwarehouse
+before insert on warehouse for each row
+declare
+begin
+if(:new.id not like 'W%') then
+raise_application_error(-20000,'Warehouse ID must starts with W');
+end if;
+end;
+/
